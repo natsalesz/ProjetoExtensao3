@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    display: flex; /* Adiciona layout flex */
+    flex-direction: column; /* Organiza em coluna */
+    min-height: 100vh; /* Garante altura mínima da viewport */
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+/* Cabeçalho (igual ao CSS fornecido) */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 200px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+.pesquisa-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesquisa-carrinho input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesquisa-carrinho button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa-carrinho button:hover {
+    background-color: #777;
+}
+
+.login-icone {
+    background-color: #444;
+    padding: 8px 10px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-icone:hover {
+    background-color: #666;
+}
+
+/* Conteúdo do Carrinho */
+.carrinho-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.carrinho-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.item-carrinho img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.detalhes-item {
+    flex: 1;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.detalhes-item p {
+    margin: 0.5rem 0;
+}
+
+.remover-item {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remover-item:hover {
+    background-color: #c0392b;
+}
+
+.carrinho-total {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.finalizar-compra {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.finalizar-compra:hover {
+    background-color: #1e8449;
+}
+
+.continuar-comprando {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.continuar-comprando:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - JM Serradilha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/produtos.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../IMG/logo JM.png" alt="Logo da JM Serradilha">
+        </div>
+        <nav class="menu">
+            <a href="../HTML/index.html">Início</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/locacoes.html">Locações</a>
+            <a href="../HTML/suporte.html">Suporte</a>
+        </nav>
+        <div class="pesquisa-carrinho">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔍</button>
+            <a href="../HTML/carrinho.html">
+                <button>🛒</button>
+            </a>
+            <button id="login-logout-icone" class="login-icone">👤</button>
+        </div>
+    </header>
+
+    <main class="produtos-page">
+        <h1>PRODUTOS</h1>
+        <div class="filtro-categoria">
+            <label for="categoria">Filtrar por Categoria:</label>
+            <select id="categoria">
+                <option value="">Selecione</option>
+                <option value="impressoras">Máquinas de Impressão</option>
+                <option value="toners">Cartuchos de Toner</option>
+                <option value="pecas">Peças para Impressoras</option>
+                <option value="tintas">Cartuchos de Tinta</option>
+                <option value="Limpeza">Itens de limpeza</option>
+                <option value="portátil">Impressora Portátil</option>
+            </select>
+            </select>
+        </div>
+        <div class="carrossel-produtos" >
+            <button class="carrossel-btn anterior">❮</button>
+            <div class="produtos-lista">
+               <div class="produto-item" data-categoria="impressoras">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLba8gOGiBrqXjjJYCoIxycdm9XS_AeNI2Q&s" alt="Máquina de Impressão">
+                <p> Multifuncional Samsung Laser Mono</p>
+                <p class="descricao" > Imprima, digitalize, copie e envie fax com rapidez, qualidade e economia em um design prático.</p>
+                <p> Preço: R$ 2.100,00  </p>
+                </div>
+                <div class="produto-item" data-categoria="impressoras">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSoW6_EIogJ0TXXf_ouhk1FAslTRGVLdCM3ngF6JmeNthVaYGROej4-cZGHUW6gnEcSxMRobMX3s15Vek7ZWzgQ1tdSzIJY8czNfzRgCG34Y1_9OfsJT6LWlQ&usqp=CAE" alt="Máquina de Impressão">
+                    <p> Impressora Multifuncional Xerox Versalink C505S</p>
+                    <p class="descricao"> Use Flexbox para centralizar e defina a largura fixa das imagens para mantê-las do mesmo tamanho.</p>
+                    <p> Preço: R$ 12.150,00  </p>
+                    </div>
+
+                <div class="produto-item" data-categoria="toners">
+                    <img src="https://xerox.vtexassets.com/arquivos/ids/155951/Preto---High.jpg?v=638640829883700000">
+                    <p>Toner Preto - Impressora Xerox C310 / C315l</p>
+                    <p class="descricao"> 
+                        Suprimentos originais Xerox garantem alto rendimento, confiabilidade, qualidade superior e menor necessidade de troca.</p>
+                    <p> Preço: R$ 1 </p>
+                </div>
+                <div class="produto-item" data-categoria="toners">
+                    <img src="https://cdn.awsli.com.br/800x800/109/109824/produto/3493994/344d11305a.jpg">
+                    <p>Cartucho de Toner HP LaserJet 648A Ciano CE261A Original</p>
+                    <p> 
+                        Impressões de alta qualidade com tonalidade ciano e desempenho confiável.</p>
+                    <p class="descricao"> Preço: R$ 499,90 </p>
+                </div>
+                <div class="produto-item" data-categoria="toners">
+                    <img src="https://br-media.hptiendaenlinea.com/catalog/product/W/1/W1105A-1_T1680779936.png" alt="Cartucho de Toner">
+                    <p>Cartucho de Toner</p>
+                    <p class="descricao"> Cartuchos de toner HP originais oferecem impressões rápidas, de alta qualidade e econômicas.</p>
+                    <p> Preço: R$ 399,90 </p>
+                </div>
+                
+                <div class="produto-item" data-categoria="pecas">
+                    <img src="https://www.creativecopias.com.br/media/catalog/product/cache/1/small_image/455x/9df78eab33525d08d6e5fb8d27136e95/4/4/4463_ampliada.jpg" alt="Peças para Impressoras">
+                    <p>Unidade Fusora Brother  </p>
+                    <p class="descricao">Compatível com DCP-L5652DN, L5502DN, L5702DW e L5102DW, garante eficiência e qualidade nas impressões.</p>
+                    <p> Preço: R$ 817,00</p>
+                    
+                </div>
+                <div class="produto-item" data-categoria="pecas">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1056874/jc93_00334a_guia_saida_papel_frame_sl_m4020_m4070_scx_5637_samsung_66739_1_4b9baad60a49093c072a7cfeb65ef7c2.jpg">
+                    <p>Guia saida papel frame sl-m4020 m4070 scx-5637 </p>
+                    <p class="descricao">Guia de saída de papel para impressoras SL-M4020, M4070 e SCX-5637, garantindo um desempenho eficiente na saída de documentos</p>
+                    <p> Preço: R$ 65,00</p>
+                    
+                </div>
+                <div class="produto-item" data-categoria="pecas">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1056874/cabeca_impressao_l800_l805_l850_r290_f180040_144027_1_b75f8ddf07120bfb381d3433d61f9c36.jpg">
+                    <p>Cabeça impressão l800 l805 l850 r290 f180040 </p>
+                    <p class="descricao" >Cabeça de impressão para impressoras L800, L805, L850, R290, garantindo qualidade e precisão nas impressões.</p>
+                    <p> Preço: R$ 900,00</p>
+                    
+                </div>
+                <div class="produto-item" data-categoria="tintas">
+                    <img src="https://www.creativecopias.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/3/5/3593_ampliada.jpg" alt="Cartuchos de Tinta">
+                    <p>Cartucho de Tinta HP 667 Preto Original (3YM79AB)</p>
+                    <p class="descricao">Cartuchos de tinta HP originais garantem qualidade, preço acessível e desempenho confiável.</p>
+                    <p> Preço: R$ 69,90</p>
+                </div>
+                <div class="produto-item" data-categoria="Limpeza">
+                    <img src="https://cdn.awsli.com.br/2500x2500/1054/1054476/produto/171723317/48d7b56811.jpg">
+                    <p> Solução para Limpeza De Impressora E Cartuchos </p>
+                    <p class="descricao"> Produto facilita recarga, desentupimento e limpeza de cartuchos, melhorando a impressão e prolongando sua vida útil.</p>
+                    <p> Preço: R$ 113,88</p>
+                   
+                </div>
+                <div class="produto-item" data-categoria="portátil">
+                    <img src="https://www.brother.com.br/-/media/brother/product-catalog-media/images/2020/05/12/18/22/pj763_right.png">
+                    <p>Impressoras Portáteis A4, Térmica e  Sem Fio</p>
+                    <p class="descricao"> Compacta e sem tinta, utiliza tecnologia térmica, permitindo impressão direta do celular com alta qualidade e conectividade sem fio.</p>
+                    <p> Preço: R$ 482,51</p>
+
+                </div>
+            </div>
+            
+            <button class="carrossel-btn proximo">❯</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2025 JM Serradilha. Todos os direitos reservados.</p>
+        <p>Contato: suporte@jmserradilha.com | Telefone: (71) 9999-9999</p>
+      </footer>
+
+    <script src="../JAVASCRIPT/produto.js"></script>
+    <script src="../JAVASCRIPT/home.js"></script> <!-- js para gerenciar o login do usuário -->
+</body>
+</html>

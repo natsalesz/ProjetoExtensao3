@@ -1,0 +1,185 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    display: flex; /* Adiciona layout flex */
+    flex-direction: column; /* Organiza em coluna */
+    min-height: 100vh; /* Garante altura mínima da viewport */
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre logo, menu e pesquisa */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo img {
+    max-height: 80px; /* Define a altura máxima do logo */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+.menu {
+    display: flex; /* Alinha os itens do menu em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre os links */
+    margin-left: 200px
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+.pesquisa-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesquisa-carrinho input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesquisa-carrinho button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa-carrinho button:hover {
+    background-color: #777;
+}
+
+.login-icone {
+    background-color: #444;
+    padding: 8px 10px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-icone:hover {
+    background-color: #666;
+}
+
+/* Estilos da seção de locações */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.locacoes h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.locacoes p {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Formulário e imagem lado a lado */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.form-locacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-locacoes input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+.form-locacoes button {
+    background-color: #a00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.form-locacoes button:hover {
+    background-color: #900;
+}
+
+/* Imagem ao lado do formulário */
+.imagem-locacoes img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    position: relative; /* Remova o `margin-top` e deixe flex ajustar */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-locacoes input {
+        width: 90%;
+    }
+
+    .imagem-locacoes img {
+        max-width: 90%;
+    }
+}

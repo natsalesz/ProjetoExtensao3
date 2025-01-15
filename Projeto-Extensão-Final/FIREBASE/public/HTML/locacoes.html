@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locação de Equipamentos</title>
+  <link rel="stylesheet" href="../CSS/locacoes.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../IMG/logo JM.png" alt="Logo da JM Serradilha">
+        </div>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/locacoes.html">Locações</a>
+            <a href="../HTML/suporte.html">Suporte</a>
+        </nav>
+        <div class="pesquisa-carrinho">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔍</button>
+            <a href="../HTML/carrinho.html">
+              <button>🛒</button>
+          </a>
+            <button id="login-logout-icone" class="login-icone">👤</button>
+        </div>
+    </header>
+
+  <main>
+    <section class="locacoes">
+      <h1>Locação de Equipamentos</h1>
+      <p>Preencha o formulário abaixo para solicitar a locação de equipamentos. <br>*Realizamos locações apenas no estado de São Paulo (SP).</p>
+      <div class="form-container">
+        <form class="form-locacoes" action="#" method="POST" onsubmit="exibirMensagemSucesso(event)">
+          <input type="text" name="nome" placeholder="NOME" required>
+          <input type="email" name="email" placeholder="E-MAIL" required>
+          <input type="text" name="telefone" placeholder="TELEFONE COM DDD" required>
+          <input type="text" name="endereco" placeholder="ENDEREÇO" required>
+          <button type="submit">ENVIAR</button>
+        </form>
+        <div class="imagem-locacoes">
+          <img src="../IMG/impressora.jpg" alt="Imagem de impressora">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2025 JM Serradilha. Todos os direitos reservados.</p>
+    <p>Contato: suporte@jmserradilha.com | Telefone: (71) 9999-9999</p>
+  </footer>
+
+  <script src="../JAVASCRIPT/locacoes.js"></script>
+  <script src="../JAVASCRIPT/home.js"></script> <!-- js para gerenciar o login do usuário -->
+</body>
+</html>

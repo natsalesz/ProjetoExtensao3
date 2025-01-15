@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - JM Serradilha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/carrinho.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../IMG/logo JM.png" alt="Logo da JM Serradilha">
+        </div>
+        <nav class="menu">
+            <a href="../HTML/index.html">Início</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/locacoes.html">Locações</a>
+            <a href="../HTML/suporte.html">Suporte</a>
+        </nav>
+        <div class="pesquisa-carrinho">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔍</button>
+            <button id="login-logout-icone" class="login-icone">👤</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="carrinho-page">
+        <h1>Carrinho de Compras</h1>
+        <div class="carrinho-container">
+            <ul id="lista-carrinho">
+                <li class="item-carrinho">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLba8gOGiBrqXjjJYCoIxycdm9XS_AeNI2Q&s" alt="Multifuncional Samsung">
+                    <div class="detalhes-item">
+                        <p>Multifuncional Samsung Laser Mono</p>
+                        <p>Quantidade: <input type="number" value="1" min="1"></p>
+                        <p>Preço Unitário: R$ 2.100,00</p>
+                        <p>Subtotal: R$ 2.100,00</p>
+                    </div>
+                    <button class="remover-item">Remover</button>
+                </li>
+            </ul>
+        </div>
+        <div class="carrinho-total">
+            <h2>Total: <span>R$ 2.100,00</span></h2>
+            <button class="finalizar-compra">Finalizar Compra</button>
+            <a href="../HTML/produtos.html" class="continuar-comprando">Continuar Comprando</a>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>© 2025 JM Serradilha. Todos os direitos reservados.</p>
+        <p>Contato: suporte@jmserradilha.com | Telefone: (71) 9999-9999</p>
+    </footer>
+    <script src="../JAVASCRIPT/home.js"></script> <!-- js para gerenciar o login do usuário -->
+</body>
+</html>
